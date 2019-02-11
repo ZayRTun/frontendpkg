@@ -9,7 +9,13 @@
 </head>
 <body>
     <main id="app">
-        <navbar></navbar>
+        <navbar-component></navbar-component>
+
+        <transition name="fade" mode="out-in">
+
+            <router-view></router-view>
+
+        </transition>
     </main>
 
     <script src="./js/app.js"></script>
